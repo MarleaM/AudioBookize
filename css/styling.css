@@ -1,0 +1,284 @@
+/*-- -------------------------- -->
+<---          Steps             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+
+  #steps-1893 {
+      padding: var(--sectionPadding); /* Adjust padding as needed */
+      background: url('../images/library_bg.jpg') no-repeat center center;
+      background-size: cover;
+      width: 100%;
+      height: 100vh; /* Makes the section take up the full viewport height */
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+    }
+
+    #steps-1893 .cs-container {
+      width: 100%;
+      height: 100%; /* Makes the container span the full height of its parent */
+      max-width: 44rem; /* Sets max-width for larger screens */
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centers content vertically within the container */
+      align-items: center; /* Centers content horizontally within the container */
+      gap: 2rem; /* Adds spacing between items */
+    }
+
+    #steps-1893 .cs-image-group {
+      font-size: min(2.24vw, 0.9rem);
+      width: 30.125em;
+      height: 38.5em;
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+
+    #steps-1893 .cs-picture {
+      width: 25.8125em;
+      height: 37.0625em;
+      margin-top: 1.5em;
+      box-sizing: border-box;
+      background-color: #DAB692;
+      overflow: hidden;
+      border: 8px solid #DAB692;
+      border-radius: 16.25rem;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+    }
+
+    #steps-1893 .cs-picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: transform 0.7s;
+    }
+
+    #steps-1893 .cs-graphic {
+      height: auto;
+      position: absolute;
+    }
+
+    #steps-1893 .cs-brown {
+      width: 10.3125em;
+      height: auto;
+      top: 1.25em;
+      left: 1.5em;
+      z-index: -2;
+      transform: rotate(140deg);
+    }
+
+    #steps-1893 .cs-peach {
+      width: 4.3125em;
+      height: auto;
+      top: 1em;
+      left: 8.75em;
+      transform: rotate(-40deg);
+    }
+
+    #steps-1893 .cs-leaf {
+      width: 14em;
+      height: auto;
+      bottom: 0em;
+      right: 1em;
+      z-index: 1;
+    }
+
+    #steps-1893 .cs-dots {
+      width: 16.3125em;
+      height: auto;
+      left: 1em;
+      bottom: 1em;
+      z-index: -2;
+    }
+
+    #steps-1893 .cs-lines {
+      width: 15.375em;
+      right: 0;
+      bottom: 0em;
+    }
+
+    #steps-1893 .cs-wrapper {
+      display: flex;
+      flex-direction: column;
+      background: rgba(39,15,13,.75);
+      border: 2px solid #826b55;;
+      border-radius: 40px;
+      color: white;
+      position: relative;
+      width: 100%; /* Ensure it spans the full width of the viewport */
+      margin: 0; /* Ensure no margins push it away from the screen edges */
+      padding: 20px 20px; /* Optional: Add padding inside the container */
+    }
+    
+    #steps-1893 .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: left;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: flex-start;
+    }
+
+    #steps-1893 .cs-topper {
+      color: var(--secondary);
+    }
+
+    #steps-1893 .cs-title { /*h1 for wrapper*/
+      margin: 0;
+      text-align: center;
+    }
+
+    #steps-1893 .input-box { /*input box*/
+      width: 100%;
+      height:80%;
+      margin: 30px 0;
+      text-align: left !important;
+    }
+
+    #steps-1893 .input-box textarea {
+      width: 100%;
+      height: 100%;
+      background: rgba(118,91,74,255);
+      border: none;
+      outline: none;
+      border: 2px solid #DAB692;;
+      border-radius: 10px;
+      font-size: large;
+      padding: 20px 45px 20px 20px; /* Add padding to give space around text */
+      box-sizing: border-box; /* Ensure padding doesn't affect overall size */
+      color: #ffe5ca;
+      resize: none; /* Disables resizing */
+      overflow: auto; /* Ensure scrollbars appear if needed */
+    }
+
+    #steps-1893 .input-box textarea::placeholder{
+      color: #DAB692;
+    }
+    
+    .cs-wrapper button {
+      width: auto; /* Change to auto to make it less wide */
+      height: 30px;
+      background: #DAB692;
+      border: none;
+      outline: none;
+      border-radius: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+      cursor: pointer;
+      color: #333;
+      font-weight: 600;
+      padding: 0 20px; /* Add padding for horizontal spacing */
+      position: absolute; /* Position the button absolutely */
+      right: 10; /* Align it to the right */
+      bottom: 10px; /* Adjust this to position the button vertically */
+    }
+  
+    .cs-wrapper button:hover {
+      background-color: #ffffff; 
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s, opacity 0.3s;
+    }
+
+    #steps-1893 .input-box textarea::-webkit-scrollbar {
+      width: 12px; /* Width of the scrollbar */
+    }
+
+    #steps-1893 .input-box textarea::-webkit-scrollbar-track {
+      background: #dcbcacbc; /* Background color of the track */
+      border-radius: 40px;
+    }
+
+    #steps-1893 .input-box textarea::-webkit-scrollbar-thumb {
+      background: rgba(39,15,13,.85); /* Color of the scrollbar handle */
+      border-radius: 6px; /* Rounded corners of the scrollbar handle */
+    }
+
+    #steps-1893 .input-box textarea::-webkit-scrollbar-thumb:hover {
+      background: rgba(39,15,13); /* Color of the scrollbar handle on hover */
+      cursor: pointer;
+    }
+
+    #steps-1893 .cs-card-group {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      align-items: stretch;
+      grid-auto-flow: row;
+      /* 24px - 32px */
+      gap: clamp(1.5rem, 3vw, 2rem);
+    }
+    #steps-1893 .cs-item {
+      list-style: none;
+      padding-bottom: 2rem;
+      border-bottom: #DED1BD 1px solid;
+      display: flex;
+      align-items: flex-start;
+      /* 16px - 24px */
+      gap: clamp(1rem, 2vw, 1.5rem);
+      position: relative;
+    }
+    #steps-1893 .cs-item:last-of-type {
+      border-bottom: none;
+    }
+    #steps-1893 .cs-number {
+      /* 49px - 72px */
+      font-size: clamp(3.0625rem, 6vw, 4.5rem);
+      font-weight: 900;
+      line-height: 1.1875em;
+      color: var(--primary);
+      opacity: 0.2;
+      display: block;
+    }
+    #steps-1893 .cs-h3 {
+      /* 20px - 25px */
+      font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+      font-weight: 700;
+      line-height: 1.125em;
+      margin: 0 0 0.75rem 0;
+      color: var(--headerColor);
+    }
+    #steps-1893 .cs-item-text {
+      font-size: 1rem;
+      line-height: 1.5em;
+      text-align: left;
+      margin: 0;
+      color: var(--bodyTextColor);
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #steps-1893 .cs-container {
+      max-width: 80rem;
+      flex-direction: row;
+      align-items: stretch;
+      /* 48px - 60px */
+      gap: clamp(3rem, 6vw, 3.75rem);
+    }
+    #steps-1893 .cs-card-group {
+      /* 16px - 32px */
+      gap: clamp(1rem, 3vw, 2rem);
+    }
+    #steps-1893 .cs-item {
+      flex-direction: row;
+    }
+    #steps-1893 .cs-image-group {
+      font-size: min(1.5vw, 1rem);
+      height: auto;
+      min-height: 38.5em;
+      flex: none;
+      /* sends it to the right in the 2nd position */
+      order: 2;
+    }
+    #steps-1893 .cs-picture {
+      height: 96.266234%;
+    }
+  }
+          
