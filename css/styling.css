@@ -1,16 +1,13 @@
-/*-- -------------------------- -->
-<---          Steps             -->
-<--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
 
   #steps-1893 {
-      padding: var(--sectionPadding); /* Adjust padding as needed */
+      padding: var(--sectionPadding); 
       background: url('../images/library_bg.jpg') no-repeat center center;
       background-size: cover;
       width: 100%;
-      height: 100vh; /* Makes the section take up the full viewport height */
+      height: 100vh; 
       overflow: hidden;
       position: relative;
       z-index: 1;
@@ -18,14 +15,14 @@
 
     #steps-1893 .cs-container {
       width: 100%;
-      height: 100%; /* Makes the container span the full height of its parent */
-      max-width: 44rem; /* Sets max-width for larger screens */
+      height: 100%; 
+      max-width: 44rem; 
       margin: auto;
       display: flex;
       flex-direction: column;
-      justify-content: center; /* Centers content vertically within the container */
-      align-items: center; /* Centers content horizontally within the container */
-      gap: 2rem; /* Adds spacing between items */
+      justify-content: center; 
+      align-items: center;
+      gap: 2rem; 
     }
 
     #steps-1893 .cs-image-group {
@@ -113,29 +110,25 @@
       border-radius: 40px;
       color: white;
       position: relative;
-      width: 100%; /* Ensure it spans the full width of the viewport */
+      width: 100%;
       height: 100%;
-      margin: 0; /* Ensure no margins push it away from the screen edges */
-      padding: 20px 20px; /* Optional: Add padding inside the container */
+      margin: 0;
+      padding: 20px 20px;
     }
     
-    /* Ensures the form takes up all available space */
     #steps-1893 #text-form {
       width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      /* Added flex-grow to fill available space */
     }
 
     #steps-1893 .cs-content {
-      /* set text align to left if content needs to be left aligned */
       text-align: left;
       width: 100%;
       display: flex;
       flex-direction: column;
-      /* centers content horizontally, set to flex-start to left align */
       align-items: flex-start;
     }
 
@@ -143,35 +136,33 @@
       color: var(--secondary);
     }
 
-    #steps-1893 .cs-title { /*h1 for wrapper*/
+    #steps-1893 .cs-title { 
       margin: 0;
       text-align: center;
     }
 
-    /* Ensures input box can expand within the form */
     #steps-1893 .input-box {
       width: 100%;
-      flex: 1; /* Allows the input box to expand and fill available space */
+      flex: 1; 
       margin: 30px 0;
       text-align: left !important;
     }
 
-    /* Ensures textarea fills the input box and has a minimum height */
     #steps-1893 .input-box textarea {
       width: 100%;
       height: 100%;
-      min-height: 150px; /* Ensures a minimum height for the textarea */
+      min-height: 150px; 
       background: rgba(118,91,74,255);
       border: none;
       outline: none;
       border: 2px solid #DAB692;
       border-radius: 10px;
       font-size: large;
-      padding: 20px 45px 20px 20px; /* Padding inside textarea */
-      box-sizing: border-box; /* Ensure padding doesn't affect overall size */
+      padding: 20px 45px 20px 20px; 
+      box-sizing: border-box; 
       color: #ffe5ca;
-      resize: none; /* Disables resizing */
-      overflow: auto; /* Ensure scrollbars appear if needed */
+      resize: none; 
+      overflow: auto;
     }
 
     #steps-1893 .input-box textarea::placeholder{
@@ -189,10 +180,10 @@
       cursor: pointer;
       color: #333;
       font-weight: 600;
-      padding: 0 20px; /* Add padding for horizontal spacing */
-      position: absolute; /* Position the button absolutely */
-      right: 10px; /* Align it to the right */
-      bottom: 10px; /* Adjust this to position the button vertically */
+      padding: 0 20px;
+      position: absolute; 
+      right: 10px; 
+      bottom: 10px; 
     }
   
     #volumeControl {
@@ -207,21 +198,21 @@
     }
 
     #steps-1893 .input-box textarea::-webkit-scrollbar {
-      width: 12px; /* Width of the scrollbar */
+      width: 12px;
     }
 
     #steps-1893 .input-box textarea::-webkit-scrollbar-track {
-      background: #dcbcacbc; /* Background color of the track */
+      background: #dcbcacbc; 
       border-radius: 40px;
     }
 
     #steps-1893 .input-box textarea::-webkit-scrollbar-thumb {
-      background: rgba(39,15,13,.85); /* Color of the scrollbar handle */
-      border-radius: 6px; /* Rounded corners of the scrollbar handle */
+      background: rgba(39,15,13,.85); 
+      border-radius: 6px; 
     }
 
     #steps-1893 .input-box textarea::-webkit-scrollbar-thumb:hover {
-      background: rgba(39,15,13); /* Color of the scrollbar handle on hover */
+      background: rgba(39,15,13); 
       cursor: pointer;
     }
 
@@ -231,7 +222,6 @@
       display: grid;
       align-items: stretch;
       grid-auto-flow: row;
-      /* 24px - 32px */
       gap: clamp(1.5rem, 3vw, 2rem);
     }
     #steps-1893 .cs-item {
@@ -240,7 +230,7 @@
       border-bottom: #DED1BD 1px solid;
       display: flex;
       align-items: flex-start;
-      /* 16px - 24px */
+
       gap: clamp(1rem, 2vw, 1.5rem);
       position: relative;
     }
